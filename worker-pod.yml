@@ -1,0 +1,19 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: worker-pod
+  labels:
+    author: naveen
+    type: worker-pod
+spec:
+  containers:
+    - name: worker-app
+      image: dockersamples/examplevotingapp_worker
+      ports:
+       - containerPort: 80
+...
+
+
+
+
